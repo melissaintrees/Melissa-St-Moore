@@ -1,0 +1,813 @@
+@charset "UTF-8";article, section, aside, hgroup, nav, header, footer, figure, figcaption
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /*margin: 0 0 100px 0;*/
+}
+
+header {
+  height: 150px;
+}
+
+#logo {
+  float:left;
+  margin-left:2.4em;
+  padding-top:10px;
+}
+
+#logo img {
+  max-width:100%;
+  margin:auto;
+}
+
+.slicknav_menu {
+  display:none;
+}
+
+nav {
+  width:98.125%;
+  position:absolute;
+  padding-top:100px;
+}
+
+nav li {
+  font-family:'Raleway', Arial, sans-serif;
+  list-style-type:none;
+  float:left;
+  margin-right: 70px;
+  line-height:25px;
+  letter-spacing:0.1em;
+  font-size:1.155em;
+}
+
+.highlight a {
+  /*font-weight:400;*/
+  color:#ed4213;
+  text-decoration:none;
+}
+
+nav li a {
+  font-weight:400;
+  /*font-size:1.155em;*/
+  /*padding:0px 0px 0px 10px;*/
+  /*text-decoration:bold;*/
+  color:black;
+}
+
+nav li a:hover {
+  text-decoration:underline;
+  color:deeppink;
+}
+
+nav li a:focus {
+  color:black;
+}
+
+.social {
+  float:right;
+  margin-top: -1.18em;
+}
+
+.fa-instagram {
+  color:#000000;
+  padding: 0em .4em 0em .4em;
+}
+
+.fa-instagram:hover {
+  color:deeppink;
+}
+
+.fa-twitter {
+  color:#000000;
+  padding: 0em .4em 0em .4em;
+}
+
+.fa-twitter:hover {
+  color:deeppink;
+}
+
+.fa-facebook {
+  color:#000000;
+  padding: 0em .4em 0em .4em;
+}
+
+.fa-facebook:hover {
+  color:deeppink;
+}
+
+.fa-newspaper-o {
+  color:#000000;
+  padding: 0em .4em 0em .4em;
+}
+
+.fa-newspaper-o:hover {
+  color:deeppink;
+}
+
+.img-responsive {
+  width:100%;
+  height:100%;
+}
+
+.jumbotron {
+}
+
+.row-wrap {
+  padding:40px;
+  margin-bottom:20px;
+
+  background-color: black;
+}
+
+.row-wrap h1 {
+  font-size:40px;
+  font-family:'Raleway', Arial, sans-serif;
+  font-weight:500;
+  color:#fff;
+  text-align:center;
+  letter-spacing:3px;
+  margin-bottom:25px;
+}
+
+/* controls in the tour, videos and  page */
+
+.music-box {
+  text-align: center;
+  margin-top: 5px;
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-bottom: 1.3em;
+
+}
+
+.music-box p {
+  font-size:16px;
+  font-family:'Raleway', Arial, sans-serif;
+  font-weight:200;
+  color:#fff;
+  text-align:center;
+  letter-spacing:1.5px;
+}
+
+.music-box img {
+  width: 40%;
+  height:40%;
+}
+
+.video-container iframe {
+
+  margin-left: auto;
+  margin-right: auto;
+}
+/* controls the text in the music page */
+
+.box-titled h2 {
+  font-size:16px;
+  font-family:'Raleway', Arial, sans-serif;
+  font-weight:200;
+  color:white;
+  text-align:center;
+  letter-spacing:1.5px;
+}
+
+.box-titled a:link {
+  color:#ed4213;
+  text-decoration: none;
+}
+
+.box-titled a:hover {
+  color:deeppink;
+  text-decoration: underline;
+}
+
+.box-titled a:active {
+  color:deeppink;
+  text-decoration: underline;
+}
+
+.box-titled a:visited {
+  color:deeppink;
+  text-decoration: none;
+}
+
+/* controls the spotify player */
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+.spotify-embeds {
+  width: 100%;
+  padding: 0px 200px;
+}
+
+.spotify-embed {
+  background: #282828;
+}
+
+iframe {
+  display: block;
+  transition: opacity 0.125s;
+  border-width: 0px;
+}
+
+/* controls info text */
+
+.head1 {
+  text-align:left; font-size:.9em;
+  font-family:'Raleway', Arial, sans-serif;
+  font-weight:300;
+  color:#FFF;
+  letter-spacing:1.4px
+}
+
+.col-sm-12 h1{
+  font-size:3em;
+  font-family:'Raleway', Arial, sans-serif;
+  font-weight:500;
+  color:#fff;
+  text-align:center;
+  letter-spacing:3px;
+}
+
+.col-sm-12 p {
+  margin: 0px 0px 28px 0px;
+  text-align: left;
+}
+
+.main-column {
+  max-width: 600px;
+  margin: 0 auto 0px;
+  font-size: 16px;
+  line-height: 167%;
+  text-align: left;
+}
+
+.max-column {
+}
+
+p {
+  text-align: left;
+  font-size: 16px;
+  font-family:'Raleway', Arial, sans-serif;
+  margin-bottom: -60px;
+  color: white;
+}
+
+p a:link {
+  color:#ed4213;
+}
+
+p a:visited {
+  color:#ed4213;
+}
+
+p a:hover {
+  color:deeppink;
+  text-decoration:underline;
+}
+
+p a:active {
+  color:deeppink;
+  text-decoration:underline;
+}
+
+.centerinfo {
+  text-align: center;
+  font-size: 16px;
+  margin: -1em 0 -1.5em 0;
+  font-family:'Raleway', Arial, sans-serif;
+}
+
+/* end control info text */
+
+footer {
+/*  clear:both;*/
+  width:100%;
+  /*height:100px*/
+  background-color:black;
+  padding: 4em;
+ /* left: 0;
+  bottom: 100;
+  position: absolute;*/
+
+}
+
+footer h2 {
+  font-size:.9em;
+  font-family:'Raleway', Arial, sans-serif;
+  color:#f94514;
+  text-align:center;
+  letter-spacing:1.4px;
+  margin-left: -60px;
+  margin-right: -60px;
+  }
+
+footer a:link {
+  color:#ed4213;
+  text-decoration: underline;
+}
+
+footer a:visited {
+  color:#ed4213;
+  text-decoration: underline;
+}
+
+footer a:hover {
+  color:deeppink;
+  text-decoration: underline;
+}
+
+footer a:active {
+  color:deeppink;
+  text-decoration: underline;
+}
+
+.fa-copyright {
+  padding: 0px 2px 0px 5px;
+}
+
+.socialfooter {
+  text-align:center;
+  padding-top: .8em;
+}
+
+.whiteiconcolor {
+  color:#FFF;
+}
+
+@media screen and (max-width: 1072px) {
+
+nav li {
+  margin-right: 60px;
+}
+
+.social {
+  margin-top: -22px;
+}
+
+}
+
+
+@media screen and (max-width:1000px) {
+
+.js nav {
+  display:none;
+}
+
+
+
+.js .slicknav_menu {
+  display: block;
+  text-align: left;
+}
+
+header {
+  height: 20px;
+  /*background-color: red;*/
+}
+
+#logo {
+  float:left;
+  margin-left: 14px;
+}
+
+#logo img {
+  /*max-width:100%;*/
+  width: 500px;
+  margin-top: 12px;
+}
+
+.social {
+  display: block;
+  float: left;
+}
+
+
+
+.facebook {
+  float:left;
+  padding:0px;
+  width:auto;
+}
+
+.fa-newspaper-o {
+  color:#FFF;
+}
+
+.fa-instagram {
+  color:#FFF;
+}
+
+.fa-twitter {
+  color:#FFF;
+}
+
+.fa-facebook {
+  color:#FFF;
+}
+
+.fa-heartbeat {
+  color:#FFF;
+}
+
+#content {
+  padding-top:1em;
+  padding-right:1em;
+  padding-bottom:0em;
+  padding-left:1em;
+}
+
+.img-responsive {
+  width:100%;
+  height:100%;
+  /*margin-top:0em;*/
+}
+
+.row {
+ /* margin-top:-25px;*/
+/*  margin-bottom:0.5em;*/
+}
+
+.jumbotron {
+/*  margin:-10px 0px 0px 0px;*/
+}
+
+.row-wrap {
+  padding:40px 40px 40px 40px;
+  /*margin-top:0px;*/
+}
+
+.row-wrap h1 {
+  font-size:35px;
+}
+
+/* controls in the tour, videos and  page */
+.music-box {
+  margin-bottom: 2em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.music-box img {
+  width: 50%;
+  height: 50%;
+}
+
+.spotify-embeds {
+  width: 100%;
+  padding: 0px 100px;
+}
+
+.max-column {
+  padding: 0 40px;
+  margin-top: 5px;
+}
+
+footer {
+ /* clear:both;*/
+  width:100%;
+
+
+}
+
+footer h2 {
+  font-size:1em;
+  color:#f94514;
+  text-align:center;
+  letter-spacing:1.4px;
+}
+
+}
+
+@media screen and (max-width:767px) {
+  /*
+  portrait tablets, portrait iPad,
+  e-readers (Nook/Kindle),
+  landscape 800x480 phones (Android)
+  */
+
+#logo {
+  float:left;
+  margin-left:1.1em;
+  margin-top:10px;
+}
+
+#logo img {
+  width:450px;
+  margin:auto;
+}
+
+.head1 {
+  font-size:.8em;
+  font-family:'Raleway', Arial, sans-serif;
+  font-weight:200;
+  color:#2b2a25;
+  text-align:center;
+  letter-spacing:1.7px;
+}
+
+
+
+.js nav {
+  display:none;
+}
+
+.js .slicknav_menu {
+  display:block;
+  text-align:left;
+}
+
+.row-wrap {
+ /* padding:30px 30px 30px 20px;*/
+}
+
+.row-wrap h1 {
+  font-size:30px;
+}
+
+.col-sm-6 {
+  padding:5px;
+}
+
+.col-md-4 {
+  padding: 20px;
+  height:90%;
+  width:90%;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.col-md-6 {
+  padding: 20px;
+  height:90%;
+  width:90%;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.img-responsive {
+/*  background-color: red;*/
+}
+
+.spotify-embeds {
+  width: 100%;
+  padding: 0px 50px;
+}
+
+.col-sm-12 h2 {
+  font-size:1.5em;
+  font-family:'Raleway', Arial, sans-serif;
+  font-weight:500;
+  color:#FFF;
+  text-align:center;
+  letter-spacing:3px;
+  padding-bottom:0em;
+}
+
+.col-sm-12 h3 {
+  font-size:1.5em;
+  font-family:'Raleway', Arial, sans-serif;
+  font-weight:500;
+  color:#FFF;
+  text-align:center;
+  letter-spacing:3px;
+  padding-bottom:0em;
+  width:100%;
+  height:100%;
+}
+
+.col-xs-12 {
+  padding-top:20px;
+}
+
+.row {
+/*  margin-top:-10px;
+  margin-bottom:15px;*/
+}
+
+/*.max-column {
+  padding: -30px 30px;
+  margin-top: -10px;
+}
+*/
+/* controls in the tour, videos and  page */
+
+.music-box img {
+  margin-bottom: .6em;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%; height: 60%;
+}
+
+.video-container {
+  position:relative;
+  padding-bottom:56.25%;
+  padding-top:30px;
+  height:0;
+  overflow:hidden;
+
+}
+
+.video-container iframe, .video-container object, .video-container embed {
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+}
+
+p {
+  font-size:18px;
+}
+
+.head1 {
+  font-size:16px;
+  font-family:'Raleway', Arial, sans-serif;
+  font-weight:300;
+  color:white;
+  text-align:center;
+  letter-spacing:1.4px
+}
+
+
+
+footer h2 {
+  font-size:.9em;
+}
+
+}
+
+
+@media screen and (max-width:575px) {
+  /*
+  smartphones, Android phones, landscape iPhone
+  */
+
+header {
+  align-content:center;
+}
+
+#logo {
+  float:left;
+  margin-left:.6em;
+  padding-top:10px;
+  width:75%;
+}
+
+#logo img{
+  max-width:90%;
+  margin:auto;
+}
+
+.head1 {
+  font-size:.9em;
+  font-family:'Raleway', Arial, sans-serif;
+  font-weight:300;
+  color: white;
+}
+
+.col-md-4 {
+  padding: 10px;
+  height:90%;
+  width:90%;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.col-md-6 {
+  padding: 10px;
+  height:90%;
+  width:90%;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.music-box img {
+  margin-bottom: .6em;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  height: 80%;
+}
+
+p {
+  font-size:18px;
+}
+
+}
+
+@media screen and (max-width: 540px) , screen and (max-height: 960px) {
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.col-md-4 {
+  padding: 10px;
+  width:100%;
+  height:100%;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.col-md-6 {
+  padding: 10px;
+  width:100%;
+  height:100%;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+}
+
+@media screen and (max-width:480px) {
+
+#logo {
+  float:left;
+  margin-left:1em;
+  padding-top:10px;
+  width:70%;
+}
+
+#logo img{
+  max-width:100%;
+}
+
+.row-wrap {
+  padding:20px;
+}
+
+.col-md-4 {
+  padding: 10px;
+  height:100%;
+  width:100%;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.col-md-6 {
+  padding: 10px;
+  height:100%;
+  width:100%;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.col-sm-12 p {
+  font-size: 16px;
+}
+
+.row-wrap h1 {
+  font-size:25px;
+}
+
+.row-wrap p {
+  font-size:15px;
+}
+
+.max-column {
+  padding: 0px 0px;
+  margin-top: -10px;
+}
+
+.row-wrap img {
+/*  width:100%;
+  height:100%;*/
+}
+
+.spotify-embeds {
+  width: 100%;
+  padding: 0px 0px;
+}
+
+.music-box {
+  margin-bottom: 2em;
+  margin-left: auto;
+  margin-right: auto;
+  width: 85%; height: 85%;
+}
+
+.head1 {
+  font-size:.9em;
+  font-family:'Raleway', Arial, sans-serif;
+  font-weight:300;
+  color: white;
+}
+
+footer {/*position: absolute;*/}
+
+}
+
+/*@media screen and (max-width:320px) {
+
+p {
+  font-size:18px;
+}
+
+}*/
+
+

@@ -1,2 +1,2 @@
-I released an eight song album of eccentric dreampop music and created this site to promote it: 
+Check out this awesome music site I made to promote an eight song album that I produced!
 www.melissastmoore.com

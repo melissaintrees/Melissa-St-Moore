@@ -1,11 +1,11 @@
 @charset "UTF-8";
 /* article, section, aside, hgroup, nav, header, footer, figure, figcaption */
 
+
 header {
   height: 150px;
-  border-bottom: grey solid 1px;
-  background-color: oldlace;
- 
+  /* border-bottom: grey solid 1px; */
+  background-color:white;
 }
 
 #logo {
@@ -16,7 +16,7 @@ header {
 
 
 #logo img {
-  max-width:100%;
+  max-width:50%;
   margin:auto;
 }
 
@@ -24,10 +24,19 @@ header {
   display:none;
 }
 
+.menu-bor {
+  border: #ed4213 solid 1px;
+  background-color: #000000;
+}
+
+#menu {
+  margin-top: 20px;
+}
+
 nav {
-  width:98.125%;
+  width:100%;
   position:absolute;
-  padding-top:100px;
+  margin-top:100px;
 }
 
 nav li {
@@ -41,21 +50,18 @@ nav li {
 }
 
 .highlight a {
-  /*font-weight:400;*/
   color:#ed4213;
   text-decoration:none;
 }
 
 nav li a {
   font-weight:400;
-  /*font-size:1.155em;*/
-  /*padding:0px 0px 0px 10px;*/
-  /*text-decoration:bold;*/
-  color:black;
+  text-decoration:none;
+  color:white;
 }
 
 nav li a:hover {
-  text-decoration:underline;
+  text-decoration:none;
   color:deeppink;
 }
 
@@ -65,51 +71,23 @@ nav li a:focus {
 
 .social {
   float:right;
-  margin-top: -1.18em;
 }
 
-.fa-instagram {
-  color:#000000;
-  padding: 0em .4em 0em .4em;
-}
-
-.fa-instagram:hover {
-  color:deeppink;
-}
-
-.fa-twitter {
-  color:#000000;
-  padding: 0em .4em 0em .4em;
-}
-
-.fa-twitter:hover {
-  color:deeppink;
-}
-
-.fa-facebook {
-  color:#000000;
-  padding: 0em .4em 0em .4em;
-}
-
-.fa-facebook:hover {
-  color:deeppink;
-}
-
+.fa-instagram,
+.fa-twitter,
+.fa-facebook,
 .fa-youtube {
-  color:#000000;
+  color:white;
   padding: 0em .4em 0em .4em;
 }
 
+.fa-instagram:hover,
+.fa-twitter:hover,
+.fa-facebook:hover,
 .fa-youtube:hover {
   color:deeppink;
+  text-decoration: none;
 }
-
-/*#content {
-  padding-top:2em;
-  padding-right:1em;
-  padding-bottom:1em;
-  padding-left:1em;
-}*/
 
 .img-responsive {
   width:100%;
@@ -252,8 +230,6 @@ iframe {
   text-align: left;
 }
 
-.max-column {
-}
 
 p {
   text-align: left;
@@ -294,20 +270,20 @@ footer {
   clear:both;
   width:100%;
   height:200px;
-  background-color:#ed4213;
+  background-color:black;
   padding: 7em;
 }
 
 footer h2 {
   font-size:.9em;
   font-family:'Raleway', Arial, sans-serif;
-  color:#black;
+  color:white;
   text-align:center;
   letter-spacing:1.4px
 }
 
 footer a:link {
-  color:black;
+  color:white;
   text-decoration: underline;
 }
 
@@ -340,14 +316,17 @@ footer a:active {
 }
 
 @media screen and (max-width: 1072px) {
-
-nav li {
-  margin-right: 60px;
-}
-
-.social {
-  margin-top: -22px;
-}
+  nav li {
+    margin-right: 60px;
+  }
+  .social {
+    float: none;
+  }
+  .row-wrap {
+    padding: 20px;
+    color: black;
+    margin-top: 60px;
+  }
 }
 
 
@@ -357,26 +336,25 @@ nav li {
   display:none;
 }
 
-
-
 .js .slicknav_menu {
   display: block;
   text-align: left;
 }
 
 header {
-  height: 20px;
+  height: 30px;
+  border-bottom: none;
 }
 
 
 #logo {
   float:left;
-  margin-left:1em;
-  padding-top:6px;
+  margin-left:30px;
+  margin-top:30px;
 }
 
 #logo img {
-  max-width:90%;
+  max-width:70%;
   margin:auto;
 }
 
@@ -385,43 +363,26 @@ header {
   float: left;
 }
 
-.insta {
-  float:left;
-  padding:0px;
-  width:auto;
-}
-
-.twitter {
-  float:left;
-  padding:0px;
-  width:auto;
-}
-
+.insta,
+.twitter,
 .facebook {
   float:left;
   padding:0px;
   width:auto;
 }
 
+
 .fa-newspaper-o {
   color:#FFF;
 }
 
-.fa-instagram {
-  color:#FFF;
-}
-
-.fa-twitter {
-  color:#FFF;
-}
-
-.fa-facebook {
-  color:#FFF;
-}
-
+.fa-instagram,
+.fa-twitter,
+.fa-facebook,
 .fa-heartbeat {
   color:#FFF;
 }
+
 
 #content {
   padding-top:1em;
@@ -436,14 +397,12 @@ header {
   margin-top:0em;
 }
 
-
-
 .jumbotron {
   margin:-10px 0px -10px 0px;
 }
 
 .row-wrap {
-  padding:50px 40px 40px 40px;
+  padding:20px !important;
   margin-top:0px;
 }
 

@@ -24,13 +24,14 @@
   <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
 
   <link href="css/slicknav.css" rel="stylesheet" type="text/css">
-  <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
-  <link href="css/style.css" rel="stylesheet" type="text/css">
-
+  <!-- <link href="css/bootstrap.css" rel="stylesheet" type="text/css"> -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+  crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Raleway:400,600,900" rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-
-  <meta name="google-site-verification" content="9c0Xqoz-QTEk4tXUoKHels4reA7Ljmn4LE_HEHd3FdQ" />
+<link href="css/style.css" rel="stylesheet" type="text/css">
+  
+<meta name="google-site-verification" content="9c0Xqoz-QTEk4tXUoKHels4reA7Ljmn4LE_HEHd3FdQ" />
 
   <meta name="description" content="In a pickle over what new songs to feed your ears? Get the party started with the fresh sounds of Melissa St Moore! Melissa plays eccentric dream pop with an 80s synth style.">
   <meta name="keywords" content="independent music, underground band, bandcamp artists, spotify list, how to make a playlist on spotify, fresh sound, bowie moonage daydream live, record deal, unsigned artists, hiphop music">
@@ -39,7 +40,11 @@
   <!-- <link href="css/reset.css" rel="stylesheet" type="text/css"> -->
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+  crossorigin="anonymous"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+  crossorigin="anonymous"></script>
   <script src="js/jquery.slicknav.min.js"> </script>
 
 </head>
@@ -78,44 +83,51 @@
 
     <div id="content">
 
-      <div class="img-responsive">
 
-        <div class="row-wrap">
 
-            <div class="row">
+      <div class="row-wrap">
+        <div class="container">
+          <div class="row top-img">
 
-              <div class="col-md-4">
-              <a href="music.html"><img src="images/home.1.jpg" class="img-responsive" alt="satan girl"></a>
-              </div>
-
-              <div class="col-md-4">
-              <a href="videos.html"><img src="images/home.2.jpg" class="img-responsive" alt= "beachy keen"></a>
-              </div>
-
-              <div class="col-md-4">
-              <a href="info.html"><img src="images/home.3.jpg" class="img-responsive" alt="they came in peace"></a>
-              </div>
-
+            <div class="col-lg-4">
+              <a href="music.html">
+                <img src="images/home.1.jpg" class="rounded img-fluid" alt="satan girl">
+              </a>
             </div>
 
-        </div>
+            <div class="col-lg-4">
+              <a href="videos.html">
+                <img src="images/home.2.jpg" class="img-fluid" alt="beachy keen">
+              </a>
+            </div>
 
-        <div class="row-wrap">
+            <div class="col-lg-4">
+              <a href="info.html">
+                <img src="images/home.3.jpg" class="img-fluid" alt="they came in peace">
+              </a>
+            </div>
+          </div>
+
+
           <div class="row">
-
-            <div class="col-md-4, col-md-6">
-            <a href="tour.html"><img src="images/home.4.jpg" class="img-responsive" alt="space clouds"></a>
+            <div class="col-lg-6">
+              <a href="tour.html">
+                <img src="images/home.4.jpg" class="img-fluid" alt="space clouds">
+              </a>
             </div>
 
-            <div class="col-md-4, col-md-6">
-            <a href="https://itunes.apple.com/album/id1148523009?ls=1&app=itunes" target="_blank"><img src="images/home.5.png" class="img-responsive" alt="cool man luke"></a>
+            <div class="col-lg-6">
+              <a href="https://itunes.apple.com/album/id1148523009?ls=1&app=itunes" target="_blank">
+                <img src="images/home.5.png" class="img-fluid" alt="cool man luke">
+              </a>
             </div>
 
           </div>
         </div>
       </div>
 
-  </div> <!-- /end #content-->
+    </div>
+    <!-- /end #content-->
 
 
   <footer>
@@ -135,14 +147,13 @@
 
   <!-- Javascript for slicknav menu -->
 
-  <script type="text/javascript">
-   $('#menu').slicknav({
+<script type="text/javascript">
+  $('#menu').slicknav({
     label: '',
     duration: 500,
-    prependTo:'#mobile-nav',
+    prependTo: '#mobile-nav',
   });
-
-  </script>
+</script>
 
   <!-- End Javascript -->
 

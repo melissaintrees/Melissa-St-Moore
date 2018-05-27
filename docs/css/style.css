@@ -1,7 +1,11 @@
-@charset "UTF-8";article, section, aside, hgroup, nav, header, footer, figure, figcaption
+@charset "UTF-8";
+/* article, section, aside, hgroup, nav, header, footer, figure, figcaption */
 
 header {
   height: 150px;
+  border-bottom: grey solid 1px;
+  background-color: oldlace;
+ 
 }
 
 #logo {
@@ -112,24 +116,21 @@ nav li a:focus {
   height:100%;
 }
 
-.jumbotron {
+.top-img {
+    padding-bottom:20px;
 }
 
-/*.row {
-  margin-top:0em;}*/
-
 .row-wrap {
-  padding:40px;
-  margin-bottom:20px;
+  padding:20px;
   color:black;
-  background-color: black;
+  margin: 50px 0;
 }
 
 .row-wrap h1 {
   font-size:40px;
   font-family:'Raleway', Arial, sans-serif;
   font-weight:500;
-  color:#fff;
+  color:black;
   text-align:center;
   letter-spacing:3px;
   margin-bottom:25px;
@@ -293,20 +294,20 @@ footer {
   clear:both;
   width:100%;
   height:200px;
-  background-color:black;
+  background-color:#ed4213;
   padding: 7em;
 }
 
 footer h2 {
   font-size:.9em;
   font-family:'Raleway', Arial, sans-serif;
-  color:#f94514;
+  color:#black;
   text-align:center;
   letter-spacing:1.4px
 }
 
 footer a:link {
-  color:#ed4213;
+  color:black;
   text-decoration: underline;
 }
 
@@ -435,10 +436,7 @@ header {
   margin-top:0em;
 }
 
-.row {
-  margin-top:-25px;
-  margin-bottom:0.5em;
-}
+
 
 .jumbotron {
   margin:-10px 0px -10px 0px;
@@ -529,7 +527,7 @@ footer h2 {
 }
 
 .row-wrap {
-  padding:30px 30px 30px 20px;
+  padding:0px;
   margin-top:0px;
 }
 
@@ -578,11 +576,6 @@ footer h2 {
 
 .col-xs-12 {
   padding-top:20px;
-}
-
-.row {
-  margin-top:-10px;
-  margin-bottom:15px;
 }
 
 /*.max-column {

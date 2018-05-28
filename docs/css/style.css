@@ -1,11 +1,19 @@
 @charset "UTF-8";
 /* article, section, aside, hgroup, nav, header, footer, figure, figcaption */
 
-
+/* sticky footer */
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  margin-bottom: 100px;
+}
 header {
   height: 150px;
   /* border-bottom: grey solid 1px; */
   background-color:white;
+  margin-bottom: 50px;
 }
 
 #logo {
@@ -99,21 +107,58 @@ nav li a:focus {
     padding-bottom:20px;
 }
 
+.Radikal-Regular {
+  font-family: Radikal-Regular;
+  font-weight: normal;
+  font-style: normal;
+}
+
 .row-wrap {
-  padding:20px;
+  padding:30px;
   color:black;
-  margin: 50px 0;
 }
 
 .row-wrap h1 {
   font-size:40px;
-  font-family:'Raleway', Arial, sans-serif;
+  font-family:'Radikal', Arial, sans-serif;
   font-weight:500;
   color:black;
   text-align:center;
   letter-spacing:3px;
   margin-bottom:25px;
 }
+
+
+a.hover-text {
+  /* position: relative; */
+  /* width:100%; */
+  text-align: center;
+  text-decoration: none;
+}
+a.hover-text::after {
+  content: attr(title);
+  position: absolute;
+  text-align: center;
+  left: 0;
+  bottom: 0;
+  padding: 1em 20px;
+  width: 92%;
+  margin-left:15px;
+  margin-right:15px;
+  background: rgba(0, 0, 0, 0.8);
+  text-decoration: none !important;
+  color: #fff;
+  opacity: 0;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -o-transition: 0.5s;
+  -ms-transition: 0.5s;
+}
+a.hover-text:hover::after, a.hover-text:focus::after {
+  opacity: 1.0;
+}
+
+
 
 /* controls in the tour, videos and  page */
 
@@ -270,9 +315,11 @@ p a:active {
 footer {
   clear:both;
   width:100%;
-  height:150px;
+ 
   background-color:black;
-
+  position: absolute;
+  bottom: 0;
+  height:100px;
 }
 
 footer h2 {
@@ -282,6 +329,7 @@ footer h2 {
   text-align:center;
   letter-spacing:1.4px;
   padding-top: 50px;
+  font-weight: 700;
 }
 
 footer a:link {
@@ -317,22 +365,68 @@ footer a:active {
   color:#FFF;
 }
 
-@media screen and (max-width: 1072px) {
-  nav li {
-    margin-right: 60px;
+
+@media screen and (max-width: 1440px) {
+  header {
+    margin-bottom: 20px;
   }
+  #logo {
+    margin-left: 3.4em;
+  }
+
+  #menu {
+    margin-left: 1em;
+  }
+
   .social {
-    float: none;
+    margin-right: 2.5em;
   }
+
   .row-wrap {
-    padding: 20px;
-    color: black;
-    margin-top: 60px;
+    padding: 50px;
   }
 }
 
 
-@media screen and (max-width:1000px) {
+@media screen and (max-width: 1198px) {
+  
+  .row-wrap {
+    color: black;
+    padding: 0px;
+  }
+  .content {
+    padding-top: 8vh;
+    padding-bottom: 8vh;
+  }
+}
+@media screen and (max-width:1024px) {
+  header {
+    margin-top:30px;
+  }
+  nav li {
+    margin-right: 50px;
+  }
+  .social {
+    margin-right: 1em;
+  }
+  .top-img {
+    padding-bottom: 40px;
+  }
+}
+@media screen and (max-width:800px) {
+
+  nav li {
+    font-size: 16px;
+  }
+
+  .content {
+    padding-top: 7vh;
+    padding-bottom: 7vh;
+  }
+
+}
+
+@media screen and (max-width:767px) {
 
 .js nav {
   display:none;
@@ -340,7 +434,6 @@ footer a:active {
 
 .js .slicknav_menu {
   display: block;
-  text-align: left;
 }
 
 header {
@@ -348,16 +441,21 @@ header {
   border-bottom: none;
 }
 
-
 #logo {
-  float:left;
-  margin-left:30px;
-  margin-top:30px;
+  padding-top: 0px;
+  margin-bottom: 20px;
+  margin-left: 1.3em;
+  padding-left: 10px;
 }
 
 #logo img {
-  max-width:70%;
+  max-width:50%;
   margin:auto;
+}
+
+.slicknav_btn {
+  margin: -30px 35px 15px 25px;
+  font-size: 25px;
 }
 
 .social {
@@ -386,11 +484,13 @@ header {
 }
 
 
-#content {
-  padding-top:1em;
-  padding-right:1em;
-  padding-bottom:0em;
-  padding-left:1em;
+.content {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.top-img {
+  padding-bottom: 0px;
 }
 
 .img-responsive {
@@ -404,12 +504,20 @@ header {
 }
 
 .row-wrap {
-  padding:20px !important;
+  padding-top:0px;
   margin-top:0px;
+  padding-bottom: 40px;
 }
 
 .row-wrap h1 {
   font-size:35px;
+}
+
+.ind-img {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-left: 45px;
+  margin-right: 45px;
 }
 
 /* controls in the tour, videos and  page */
@@ -434,180 +542,31 @@ header {
   margin-top: 5px;
 }
 
-footer {
-  clear:both;
-  width:100%;
-  height:275px;
-  padding:40px;
-  position:absolute;
-}
 
 footer h2 {
-  font-size:1em;
   color:#f94514;
-  text-align:center;
-  letter-spacing:1.4px;
 }
 
 }
 
-@media screen and (max-width:767px) {
-  /*
-  portrait tablets, portrait iPad,
-  e-readers (Nook/Kindle),
-  landscape 800x480 phones (Android)
-  */
-
-#logo {
-  float:left;
-  margin-left:1em;
-  padding-top:4px;
-}
-
-#logo img {
-  max-width:90%;
-  margin:auto;
-}
-
-.head1 {
-  font-size:.8em;
-  font-family:'Raleway', Arial, sans-serif;
-  font-weight:200;
-  color:#2b2a25;
-  text-align:center;
-  letter-spacing:1.7px;
-}
-
-.js nav {
-  display:none;
-}
-
-.js .slicknav_menu {
-  display:block;
-  text-align:left;
-}
-
-.row-wrap {
-  padding:0px;
-  margin-top:0px;
-}
-
-.row-wrap h1 {
-  font-size:30px;
-}
-
-.col-sm-6 {
-  padding:5px;
-}
-
-/* .col-md-4 {
-  padding: 5px;
-  height:85%;
-  width:85%;
-  margin-left:auto;
-  margin-right:auto;
-} */
-
-.spotify-embeds {
-  width: 100%;
-  padding: 0px 50px;
-}
-
-.col-sm-12 h2 {
-  font-size:1.5em;
-  font-family:'Raleway', Arial, sans-serif;
-  font-weight:500;
-  color:#FFF;
-  text-align:center;
-  letter-spacing:3px;
-  padding-bottom:0em;
-}
-
-.col-sm-12 h3 {
-  font-size:1.5em;
-  font-family:'Raleway', Arial, sans-serif;
-  font-weight:500;
-  color:#FFF;
-  text-align:center;
-  letter-spacing:3px;
-  padding-bottom:0em;
-  width:100%;
-  height:100%;
-}
-
-.col-xs-12 {
-  padding-top:20px;
-}
-
-/*.max-column {
-  padding: -30px 30px;
-  margin-top: -10px;
-}
-*/
-/* controls in the tour, videos and  page */
-
-.music-box img {
-  margin-bottom: .6em;
-  margin-left: auto;
-  margin-right: auto;
-  width: 60%; height: 60%;
-}
-
-.video-container {
-  position:relative;
-  padding-bottom:56.25%;
-  padding-top:30px;
-  height:0;
-  overflow:hidden;
-
-}
-
-.video-container iframe, .video-container object, .video-container embed {
-  position:absolute;
-  top:0;
-  left:0;
-  width:100%;
-  height:100%;
-}
-
-p {
-  font-size:18px;
-}
-
-.head1 {
-  font-size:16px;
-  font-family:'Raleway', Arial, sans-serif;
-  font-weight:300;
-  color:white;
-  text-align:center;
-  letter-spacing:1.4px
-}
-
-footer h2 {
-  font-size:.9em;
-}
-
-}
-
-@media screen and (max-width:575px) {
+@media screen and (max-width:550px) {
   /*
   smartphones, Android phones, landscape iPhone
   */
 
-header {
-  align-content:center;
-}
-
 #logo {
   float:left;
   margin-left:.6em;
-  padding-top:10px;
+  padding-top:0px;
   width:75%;
 }
 
 #logo img{
-  max-width:90%;
+  /* max-width:90%; */
   margin:auto;
+}
+.slicknav_btn {
+  margin: -10px 15px 15px 15px;
 }
 
 .head1 {
@@ -617,21 +576,6 @@ header {
   color: white;
 }
 
-.col-md-4 {
-  padding: 10px;
-  height:90%;
-  width:90%;
-  margin-left:auto;
-  margin-right:auto;
-}
-
-.col-md-6 {
-  padding: 10px;
-  height:90%;
-  width:90%;
-  margin-left:auto;
-  margin-right:auto;
-}
 
 .music-box img {
   margin-bottom: .6em;
@@ -647,63 +591,46 @@ p {
 
 }
 
-@media screen and (max-width: 540px) , screen and (max-height: 960px) {
 
-img {
-  width: 100%;
-  height: auto;
-}
-
-.col-md-4 {
-  padding: 10px;
-  width:100%;
-  height:100%;
-  margin-left:auto;
-  margin-right:auto;
-}
-
-.col-md-6 {
-  padding: 10px;
-  width:100%;
-  height:100%;
-  margin-left:auto;
-  margin-right:auto;
-}
-
-}
 
 @media screen and (max-width:480px) {
 
 #logo {
   float:left;
   margin-left:.6em;
-  padding-top:10px;
+  padding-top:0px;
   width:70%;
+  margin-bottom: 0px;
 }
 
 #logo img{
   max-width:100%;
 }
 
+.slicknav_btn{
+      margin: -22px 25px 15px 15px;
+      font-size: 25px;
+}
+
 .row-wrap {
-  padding:20px;
+  padding:10px;
 }
 
-.col-md-4 {
-  padding: 10px;
-  height:100%;
-  width:100%;
-  margin-left:auto;
-  margin-right:auto;
+.content {
+  padding-top: 10px;
 }
 
-.col-md-6 {
-  padding: 10px;
-  height:100%;
-  width:100%;
-  margin-left:auto;
-  margin-right:auto;
+.ind-img {
+  padding-top: 0px;
+  padding-bottom: 15px;
+  margin-left: 0px;
+  margin-right: 0px;
 }
+
+.slicknav_nav a {
+  margin-left: 15px;
+}
+
 
 .col-sm-12 p {
   font-size: 16px;

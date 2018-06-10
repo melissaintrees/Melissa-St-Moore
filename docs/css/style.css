@@ -451,7 +451,6 @@ a.btn {
 
 .info-image {
   width: 25%;
-  height: 50%;
 }
 
 .video-container iframe {
@@ -468,18 +467,6 @@ ul.album-info {
     font-family:'Open Sans',
     sans-serif;
     font-weight: 700;
-}
-.box-titled {
-  margin-right: auto;
-  margin-left: auto;
-}
-.box-titled h2 {
-  font-size:16px;
-  font-family:'Open Sans', Arial, sans-serif;
-  font-weight:200;
-  color:black;
-  text-align:center;
-  letter-spacing:1.5px;
 }
 
  a:link {
@@ -518,7 +505,7 @@ iframe {
 }
 
 
-.info-info{
+.info-info {
   text-align: left;
   font-size: 16px;
   font-family:'Open Sans', sans-serif;
@@ -545,8 +532,8 @@ p a:active {
   text-decoration:underline;
 }
 
-.span-opportunities {
-  font-family: 
+.span-opport {
+  font-family: Radikal-Regular;
 }
 
 /* end control info text */
@@ -625,6 +612,12 @@ footer a:hover {
   .row-wrap {
     padding: 50px;
   }
+
+  .info-image {
+    width: 45%;
+    height: 50%;
+  }
+
 }
 
 
@@ -832,10 +825,7 @@ a.hover-text-spin::after {
   margin-right: auto;
 }
 
-.info-image img {
-  width: 25%;
-  height: 50%;
-}
+
 
 .spotify-embeds {
   width: 100%;

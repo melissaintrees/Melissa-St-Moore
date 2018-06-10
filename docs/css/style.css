@@ -148,8 +148,8 @@ a.hover-text {
   text-decoration: none;
 }
 
-.ind-img img,
-.ind-img-2 img, 
+.ind-img img, 
+.ind-img-2 img,
 .ind-img-3 img {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
     0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -161,18 +161,19 @@ a.hover-text {
 }
 
 .ind-img-2:hover img {
-
   -webkit-transform: rotate(180deg);
   transform: rotate(180deg);
 }
 
 .ind-img-2:hover img {
-  filter: contrast(2);
-  -webkit-filter: contrast(2);
+  filter: hue-rotate(50deg) saturate(10) invert(1);
+  -webkit-filter: hue-rotate(50deg) saturate(10) invert(1);
 }
 .ind-img-3:hover img {
-    filter: contrast(2);
-    -webkit-filter: contrast(2);
+    filter: invert(2);
+    -webkit-filter: invert(2);
+    filter: hue-rotate(200deg);
+    -webkit-filter: hue-rotate(200deg);
 }
 .ind-img-2 img {
   -webkit-transition: width 2s,
@@ -206,6 +207,7 @@ a.hover-text-spin::after {
   text-decoration: none !important;
   opacity: 0;
 }
+
 
 a.hover-text::after,
 a.hover-text-lg::after {

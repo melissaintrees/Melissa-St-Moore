@@ -482,39 +482,15 @@ ul.album-info {
   letter-spacing:1.5px;
 }
 
-.box-titled a:link {
+ a:link {
   color:#ed4213;
   text-decoration: none;
 }
 
-.box-titled a:hover {
-  color:deeppink;
-  text-decoration: underline;
-}
 
-.box-titled a:active {
-  color:deeppink;
-  text-decoration: underline;
-}
-
-.box-titled a:visited {
-  color:deeppink;
-  text-decoration: none;
-}
-
-/* controls the spotify player */
+/* controls the bandcamp player */
 *, *:before, *:after {
   box-sizing: border-box;
-}
-
-.spotify-embeds {
-  width: 100%;
-/*  padding: 0px 200px;*/
-
-}
-
-.spotify-embed {
-  background: #282828;
 }
 
 iframe {
@@ -529,41 +505,26 @@ iframe {
 
 .head1 {
   text-align:left; font-size:.9em;
-  font-family:'Raleway', Arial, sans-serif;
+  font-family:'Open Sans', sans-serif;
   font-weight:300;
-  color:#FFF;
+  color:black;;
   letter-spacing:1.4px
 }
 
-.col-sm-12 h1{
-  font-size:3em;
-  font-family:'Raleway', Arial, sans-serif;
-  font-weight:500;
-  color:#fff;
-  text-align:center;
-  letter-spacing:3px;
-}
-
-.col-sm-12 p {
-  margin: 0px 0px 28px 0px;
-  text-align: left;
-}
 
 .main-column {
-  max-width: 600px;
+  max-width: 700px;
   margin: 0 auto 0px;
-  font-size: 16px;
-  line-height: 167%;
-  text-align: left;
 }
 
 
-p .info-info{
+.info-info{
   text-align: left;
   font-size: 16px;
-  font-family:'Open Sans', Arial, sans-serif;
-  margin-bottom: -60px;
+  font-family:'Open Sans', sans-serif;
   color: black;
+  font-weight:300;
+  line-height: 30px;
 }
 
 p a:link {
@@ -575,20 +536,17 @@ p a:visited {
 }
 
 p a:hover {
-  color:deeppink;
+  color:#ed4213;
   text-decoration:underline;
 }
 
 p a:active {
-  color:deeppink;
+  color:#ed4213;
   text-decoration:underline;
 }
 
-.centerinfo {
-  text-align: center;
-  font-size: 16px;
-  margin: -1em 0 -1.5em 0;
-  font-family:'Raleway', Arial, sans-serif;
+.span-opportunities {
+  font-family: 
 }
 
 /* end control info text */

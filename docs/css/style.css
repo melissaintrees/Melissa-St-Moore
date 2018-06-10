@@ -433,11 +433,10 @@ a.btn {
 
 .music-box {
   text-align: center;
-  margin-top: 5px;
+  margin-top: 50px;
   margin-right: 10px;
   margin-left: 10px;
   margin-bottom: 1.3em;
-
 }
 
 .album-info p {
@@ -617,6 +616,9 @@ footer a:hover {
     width: 45%;
     height: 50%;
   }
+    .main-column {
+    margin: 0 auto 20px;
+  }
 
 }
 
@@ -644,6 +646,8 @@ footer a:hover {
   a.hover-text-spin::after {
     width: 90.5%;
   }
+
+  
 }
 @media screen and (max-width:1024px) {
   header {
@@ -672,6 +676,10 @@ footer a:hover {
   a.hover-text-lg::after {
     width: 91.7%;
   }
+    .main-column {
+    margin: 0 auto 40px;
+  }
+
 
 }
 @media screen and (max-width:800px) {
@@ -820,9 +828,15 @@ a.hover-text-spin::after {
 
 /* controls in the tour, videos and  page */
 .music-box {
+  margin-top: 1em;
   margin-bottom: 2em;
   margin-left: auto;
   margin-right: auto;
+}
+
+.info-image {
+    width: 65%;
+    height: 50%;
 }
 
 
@@ -832,9 +846,10 @@ a.hover-text-spin::after {
   padding: 0px 100px;
 }
 
-.max-column {
+.main-column {
   padding: 0 40px;
   margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 
@@ -877,8 +892,9 @@ a.hover-text-spin::after {
   width: 93%;
 }
 
-.music-box img {
+.music-box {
   margin-bottom: .6em;
+  margin-top: 0px;
   margin-left: auto;
   margin-right: auto;
   width: 80%;
@@ -964,20 +980,15 @@ a.hover-text-spin::after {
   font-size:15px;
 }
 
-.max-column {
-  padding: 0px 0px;
+.main-column {
+  padding: 0px 30px;
   margin-top: -10px;
 }
 
-.row-wrap img {
+/* .row-wrap img {
   width:100%;
   height:100%;
-}
-
-.spotify-embeds {
-  width: 100%;
-  padding: 0px 0px;
-}
+} */
 
 .music-box {
   margin-bottom: 2em;
@@ -986,12 +997,6 @@ a.hover-text-spin::after {
   width: 85%; height: 85%;
 }
 
-.head1 {
-  font-size:.9em;
-  font-family:'Raleway', Arial, sans-serif;
-  font-weight:300;
-  color: white;
-}
 
 }
 
@@ -1005,6 +1010,10 @@ a.hover-text-spin::after {
   color: white;
   background: none;
   letter-spacing: 5px;
+}
+
+.music-box {
+  margin-top: 0px;
 }
 
 }

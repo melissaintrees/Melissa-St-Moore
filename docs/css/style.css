@@ -160,6 +160,10 @@ a.hover-text {
   -webkit-filter: invert(1) saturate(50) opacity(.5);
 }
 
+.ind-img::after {
+  width: 1000%;
+}
+
 .ind-img-2:hover img {
   -webkit-transform: rotate(180deg);
   transform: rotate(180deg);
@@ -648,9 +652,17 @@ footer a:hover {
     width: 1180px;
     height: 650px;
   }
-
+  .center-screen-2{
+      margin-top: 25px;
+      min-height: 65vh;
+  }
 }
-
+@media screen and (max-width: 1281px) {
+  .center-screen-2 {
+    margin-top: 25px;
+    min-height: 60vh;
+  }
+}
 
 @media screen and (max-width: 1198px) {
   
@@ -722,6 +734,11 @@ footer a:hover {
     width: 800px;
     height: 800px;
   }
+
+  .center-screen-2 {
+    margin-top: 80px;
+  min-height: 66vh;
+  }
 }
 
 @media screen and (max-width:890px) {
@@ -750,7 +767,10 @@ footer a:hover {
     height: 800px;
   }
  
-
+.center-screen-2 {
+  margin-top: 20px;
+  min-height: 65vh;
+}
 }
 
 @media screen and (max-width:767px) {
@@ -895,6 +915,7 @@ a.hover-text-spin::after {
   margin-bottom: 5px;
 }
 
+
 }
 
 @media screen and (max-width:550px) {
@@ -1037,6 +1058,12 @@ a.hover-text-spin::after {
   margin-left: auto;
   margin-right: auto;
   width: 85%; height: 85%;
+}
+
+.center-screen-2 {
+  margin-top: 15px;
+  min-height: 65vh;
+  margin-bottom: 15px;
 }
 
 

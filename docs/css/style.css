@@ -1091,29 +1091,22 @@ a.hover-text-spin::after {
   body:hover {
     background-color: greenyellow;
   }
-  .detection {
-    color: black;
-  }
+
 /* on touch screens when hover is disabled */
 @media (hover: none) {
  body{
    background-color: red;
   }
+  /* a.hover-text::after,
+a.hover-text-lg::after,
+a.hover-text-spin::after {
+  font-size: 50px;
+  text-transform: lowercase;
+  padding: 2.5em 20px;
+  color: white;
+  background: none;
+  letter-spacing: 5px;
+} */
 
-
-/* // used to show if demo browser has hover capabilities */
-.detection:before {
-  content: 'unknown';
-}
-}
-@media(hover) {
-  .detection:before {
-    content: 'yes';
-  }
 }
 
-@media (hover: none) {
-  .detection:before {
-    content: 'no';
-  }
-}

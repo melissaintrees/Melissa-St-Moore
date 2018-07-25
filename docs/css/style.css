@@ -160,9 +160,6 @@ a.hover-text {
   -webkit-filter: invert(1) saturate(50) opacity(.5);
 }
 
-.ind-img::after {
-  width: 1000%;
-}
 
 .ind-img-2:hover img {
   -webkit-transform: rotate(180deg);
@@ -244,12 +241,13 @@ a.hover-text-spin:focus::after {
   opacity: 1;
 }
 
+.content {
+  min-height: 70vh;
+}
+
 
 /* ======= Music Section ======= */
-.content {
-  padding-top: 8vh;
-  padding-bottom: 8vh;
-}
+
   .content2 {
     padding-top: 12vh;
     padding-bottom: 8vh;
@@ -881,12 +879,12 @@ ul.track-list {
   margin-right: 45px;
 }
 
-a.hover-text::after,
+/* a.hover-text::after,
 a.hover-text-lg::after,
 a.hover-text-spin::after {
   padding: 1em 20px;
   width: 93.5%;
-}
+} */
 
 /* controls in the tour, videos and  page */
 .music-box {
@@ -944,12 +942,12 @@ a.hover-text-spin::after {
   font-weight:300;
   color: white;
 }
-a.hover-text::after,
+/* a.hover-text::after,
 a.hover-text-lg::after,
 a.hover-text-spin::after {
   padding: 1em 20px;
   width: 93%;
-}
+} */
 
 .music-box {
   margin-bottom: .6em;
@@ -971,13 +969,13 @@ p {
 }
 
 @media screen and (max-width:520px) {
-
+/* 
   a.hover-text::after,
   a.hover-text-lg::after,
   a.hover-text-spin::after {
     padding: 1em 20px;
     width: 92.3%;
-  }
+  } */
  }
 
 
@@ -1005,7 +1003,7 @@ p {
 }
 
 
-a.hover-text::after,
+/* a.hover-text::after,
 a.hover-text-lg::after,
 a.hover-text-spin::after {
   font-size: 50px;
@@ -1015,7 +1013,7 @@ a.hover-text-spin::after {
   background: none;
   letter-spacing: 5px;
   opacity: 1;
-}
+} */
 
 .ind-img,
 .ind-img-2,
@@ -1070,7 +1068,7 @@ a.hover-text-spin::after {
 }
 
 @media screen and (max-width:380px) {
-a.hover-text::after,
+/* a.hover-text::after,
 a.hover-text-lg::after,
 a.hover-text-spin::after {
   font-size: 50px;
@@ -1079,7 +1077,7 @@ a.hover-text-spin::after {
   color: white;
   background: none;
   letter-spacing: 5px;
-}
+} */
 
 .music-box {
   margin-top: 0px;
@@ -1090,6 +1088,33 @@ a.hover-text-spin::after {
   }
 
 }
+  body:hover {
+    background-color: greenyellow;
+  }
+  .detection {
+    color: black;
+  }
+/* on touch screens when hover is disabled */
+@media (hover: none) {
+ body{
+   background-color: red;
+  }
 
-/* ---- reset ---- */
 
+/* // used to show if demo browser has hover capabilities */
+.detection:before {
+  content: 'unknown';
+}
+
+@media(hover) {
+  .detection:before {
+    content: 'yes';
+  }
+}
+
+@media (hover: none) {
+  .detection:before {
+    content: 'no';
+  }
+}
+}

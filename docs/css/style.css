@@ -199,7 +199,7 @@ a.hover-text-lg::before {
 }
 
 .ind-img-3:hover img {
-    filter: hue-rotate(300deg) saturate(5);
+    filter: hue-ro    margin-top: 145px;tate(300deg) saturate(5);
     -webkit-filter: hue-rotate(300deg) saturate(5);
 }
 

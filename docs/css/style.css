@@ -165,6 +165,10 @@ a.hover-text-lg::before {
   width: 94.7%;
 }
 
+.custom-margins {
+  margin-top: 140px;
+}
+
 /* .ind-img img,
 .ind-img-2 img,
 .ind-img-3 img {

@@ -509,7 +509,7 @@ https://www.myfonts.com/fonts/nootype/radikal/
 <glyph unicode="&#x2013;" glyph-name="endash" horiz-adv-x="556" d="M515 304V213H40V304H515Z" />
 <glyph unicode="&#x2014;" glyph-name="emdash" horiz-adv-x="800" d="M760 304V213H40V304H760Z" />
 <glyph unicode="&#x2018;" glyph-name="quoteleft" horiz-adv-x="191" d="M140 770V496Q127 491 113 491Q81 491 61 511T40 561Q40 575 53 601L136 770H140Z" />
-<glyph unicode="&#x2019;" glyph-name="quoteright" horiz-adv-x="191" d="M78 770Q110 770 130 751T150 701Q150 684 138 660L54 491H50V766Q61 770 78 770Z" />
+<glyph unicode="&#x2020;" glyph-name="quoteright" horiz-adv-x="191" d="M78 770Q110 770 130 751T150 701Q150 684 138 660L54 491H50V766Q61 770 78 770Z" />
 <glyph unicode="&#x201a;" glyph-name="quotesinglbase" horiz-adv-x="191" d="M78 120Q110 120 130 101T150 51Q150 34 138 10L54 -159H50V116Q61 120 78 120Z" />
 <glyph unicode="&#x201c;" glyph-name="quotedblleft" horiz-adv-x="369" d="M141 770V496Q128 491 114 491Q82 491 62 511T41 561Q41 575 54 601L137 770H141ZM319 770V496Q306 491 292 491Q260 491 240 511T219 561Q219 575 232 601L315 770H319Z" />
 <glyph unicode="&#x201d;" glyph-name="quotedblright" horiz-adv-x="369" d="M78 770Q110 770 130 751T150 701Q150 684 138 660L54 491H50V766Q61 770 78 770ZM256 770Q288 770 308 751T328 701Q328 684 316 660L232 491H228V766Q239 770 256 770Z" />

@@ -22,6 +22,7 @@
   <link rel="icon" type="image/png" href="images/favicon-32x32.png" sizes="32x32" />
   <link rel="icon" type="image/png" href="images/favicon-16x16.png" sizes="16x16" />
 
+  <link rel="stylesheet" href="https://cdn.plyr.io/3.6.2/plyr.css" />
 
   <link href="css/slicknav.css" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
@@ -88,7 +89,10 @@
       <div class="row">
         <div class="col-lg-2"></div>
         <div class="col-lg-8 center-screen">
-          <iframe class="video-page"  src="https://www.youtube.com/embed/wp_Mp_13EIs"></iframe>
+          <div class="container">
+            <div id="player" data-plyr-provider="youtube" data-plyr-embed-id="wp_Mp_13EIs"></div>
+          </div>
+          <!-- <iframe class="video-page"  src="https://www.youtube.com/embed/wp_Mp_13EIs"></iframe> -->
         </div>
         </div>
         <div class="col-lg-2"></div>
@@ -105,6 +109,7 @@
 
 </footer>
 
+<script src="https://cdn.plyr.io/3.6.2/plyr.polyfilled.js"></script>
   <!-- /end #wrapper-->
 
   <script type="text/javascript">
@@ -112,8 +117,16 @@
   	label: '',
   	duration: 500,
   	prependTo:'#mobile-nav',
-  });</script>
+  });
+  
+  // Change "{}" to your options:
+// https://github.com/sampotts/plyr/#options
+const player = new Plyr('#player', {});
 
+// Expose player so it can be used from the console
+window.player = player;
+  
+  </script>
 
   <!-- End Video Page -->
 </body>

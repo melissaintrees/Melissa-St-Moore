@@ -170,6 +170,12 @@ a.hover-text-lg::before {
   margin-top: 140px !important;
 }
 
+.pages-heading {
+  font-family: "Open Sans", sans-serif !important;
+  font-size: 4em !important;
+  color: orangered;
+  }
+
 /* .ind-img img,
 .ind-img-2 img,
 .ind-img-3 img {

@@ -176,99 +176,7 @@ a.hover-text-lg::before {
   color: orangered;
   }
 
-/* .ind-img img,
-.ind-img-2 img,
-.ind-img-3 img {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    filter: invert(1) saturate(50) opacity(.5);
-    -webkit-filter: invert(1) saturate(50) opacity(.5);
-} */
 
- /* a.hover-text {
-  text-align: center;
-  text-decoration: none;
-}
-
-
-.ind-img:hover img {
-  filter: invert(1) saturate(50) opacity(.5);
-  -webkit-filter: invert(1) saturate(50) opacity(.5);
-}
-
-.ind-img-2:hover img {
-  -webkit-transform: rotate(180deg);
-  transform: rotate(180deg);
-}
-
-.ind-img-2:hover img {
-  filter: hue-rotate(100deg) saturate(5) invert(1);
-  -webkit-filter: hue-rotate(100deg) saturate(5) invert(1);
-}
-
-.ind-img-3:hover img {
-    filter: hue-ro    margin-top: 145px;tate(300deg) saturate(5);
-    -webkit-filter: hue-rotate(300deg) saturate(5);
-}
-
-.ind-img-2 img {
-  -webkit-transition: width 2s, height 2s, background-color 2s, -webkit-transform 2s;
-  transition: width 2s, height 2s, background-color 2s, transform 2s;
-}
-
-a.hover-text::after,
-a.hover-text-lg::after,
-a.hover-text-spin::after {
-  font-family: Radikal-Regular;
-  font-weight: normal;
-  font-style: normal;
-  text-transform: uppercase;
-  font-size:40px;
-  color:#ed4213;
-  content: attr(title);
-  position: absolute;
-  text-align: center;
-  left: 0;
-  bottom: 0;
-  padding: .3em 20px;
-  margin-left:15px;
-  margin-right:15px;
-  background: rgba(8, 2, 0, 0.5);
-  text-decoration: none !important;
-  opacity: 0;
-}
-
-a.hover-text::after,
-a.hover-text-lg::after {
-  -webkit-transition: 1s;
-  -moz-transition: 1s;
-  -o-transition: 1s;
-  -ms-transition: 1s;
-}
-
-a.hover-text::after,
-a.hover-text-spin::after {
-  width: 92%;
-}
-
-a.hover-text-lg::after {
-  width: 94.7%;
-}
-
-a.hover-text-spin::after {
-  -webkit-transition: 3s;
-  -moz-transition: 3s;
-  -o-transition: 3s;
-  -ms-transition: 3s;
-}
-
-a.hover-text:hover::after, 
-a.hover-text:focus::after,
-a.hover-text-lg:hover::after,
-a.hover-text-lg:focus::after,
-a.hover-text-spin:hover::after,
-a.hover-text-spin:focus::after {
-  opacity: 1;
-}  */
 
 /* ======= Music Section ======= */
 
@@ -347,8 +255,8 @@ ul.track-list {
   margin-top: 30px;
 }
 
-a.btn-secondary,
-.btn-secondary {
+a.btn-primary,
+.btn-primary {
   background: #ed4213;
   border: none;
   color: white ;
@@ -356,6 +264,7 @@ a.btn-secondary,
   font-weight: normal;
   font-style: normal;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
 .btn,
@@ -375,18 +284,12 @@ a.btn {
   font-weight: bold;
   letter-spacing: 0.5px;
 }
-.btn-secondary:hover {
+.btn-primary:hover {
   color: #fff;
   background-color: red;
   border-color: red;
 }
 
-.links {
-  line-height: 29px;
-  font-size: 14px;
-  text-align: center;
-  cursor: pointer;
-}
 
 /* controls in the tour, videos and  page */
 

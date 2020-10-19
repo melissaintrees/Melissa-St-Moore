@@ -1,15 +1,9 @@
 
-# Personal Music Site
+# Music and Moore, St Moore!
 
-Originally deployed in 2016, this website is used to promote my self titled debut that came out late that year. Future plans for the site are to add css animations, a reactive music player, and an interactive AI based instrument functionality.
+I've been making music since I've been making websites to promote the music. This is the site for my eccentric dream-pop musical venture. Also includes some of my new show, Bananas As Fuck!!!!
 
-In the making of the album, I used an Alesis Micron keyboard, for both midi and sythn sounds, a Rhodes condensor microphone and Focusrite ISA one Pre-amp, and a mac computer with Apple Logic. The instruments were recorded mostly on the go and include vocals, electric guitars, pedals, stand up piano, accoustic guitars and bass. I also edited music videos for the album in Adobe Premiere.
-
-### Video Demo of the Site with Music
-
-[![Melissa-St-Moore-Music-Website-Demo](screenshots/demo_video_cover.png)](https://vimeo.com/257570764 "Melissa St Moore Music Site - Click to Listen/Watch!")
-
-Orginally I built this static site using traditional css/html/js and deployed it through an ftp program Filezilla and hosted through GoDaddy. It's up on github pages for fun and not specifically to contribute to open source, but if you want to grab it as a template. you are welcome to clone or fork the repo! 
+In the making of the album, I used an Alesis Micron keyboard, for both midi and synthesized sounds, a Rhodes condenser microphone and Focusrite ISA one Pre-amp, and a mac computer with Apple Logic. Some of my friends helped play live to in and sing to it, and I blended that in with the production.
 
 ## Authors
 

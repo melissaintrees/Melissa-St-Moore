@@ -35,6 +35,7 @@
 
   <meta name="google-site-verification" content="9c0Xqoz-QTEk4tXUoKHels4reA7Ljmn4LE_HEHd3FdQ" />
 
+
   <meta name="description" content="Melissa St Moore blends sounds and words to make eccentric dreampop. Her debut is available now.">
   <meta name="keywords" content="independent music, underground band, bandcamp artists, spotify list, how to make a playlist on spotify, fresh sound, bowie moonage daydream live, record deal, unsigned artists, hiphop music">
   <!-- Google Tag Manager -->
@@ -44,6 +45,7 @@
     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
     })(window,document,'script','dataLayer','GTM-WRRPVWR');</script>
     
+    <script src="https://apis.google.com/js/platform.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
@@ -62,18 +64,18 @@
       <li><a href="index.html">music</a></li>
       <li><a href="info.html">info</a></li>
       <li class="highlight"><a href="videos.html">video</a></li>
-      <li><a href="tour.html">live</a></li>
+      <li><a href="tour.html">show</a></li>
       <div class="text-right social-grp">
         <a class="social" href="https://mailchi.mp/bacbde16cf94/mailinglist" >
           <i class="far fa-newspaper fa-2x"></i>
         </a>
-        <a class="social" href="https://www.facebook.com/melissastmoore" >
-          <i class="fab fa-facebook-f fa-2x"></i>
+        <a class="social" href="https://www.instagram.com/melissastmoore" >
+          <i class="fab fa-instagram fa-2x"></i>
         </a>
         <a class="social" href="http://www.youtube.com/melissastmoore" >
           <i class="fab fa-youtube fa-2x"></i>
         </a>
-        <a class="social" href="http://smarturl.it/stmooredebutspotify" >
+        <a class="social" href="https://artists.spotify.com/c/artist/4RUivryHDsx8Q9s6kcs3YP/profile/overview" >
           <i class="fab fa-spotify fa-2x"></i>
         </a>
       </div>
@@ -83,22 +85,50 @@
 
 
   <div id="mobile-nav"></div>
+  <div id="content" class="content content2">
+    <div class="container">
 
-  <div id="content">
+        <div class="row">
+       
+            <div class="col-md-6">
+                <div class="row align-items-center h-100">
+                    <div class="col">
+                        <h1 class="pages-heading">videos</h1><br>
+                        <div id="player" data-plyr-provider="youtube" data-plyr-embed-id="wp_Mp_13EIs"></div>
 
-      <div class="row">
-        <div class="col-lg-2"></div>
-        <div class="col-lg-8 center-screen">
-          <div class="container">
-            <div id="player" data-plyr-provider="youtube" data-plyr-embed-id="wp_Mp_13EIs"></div>
-          </div>
-          <!-- <iframe class="video-page"  src="https://www.youtube.com/embed/wp_Mp_13EIs"></iframe> -->
+                    </div>
+                </div>
+            </div>
+            <!-- /.col-md-6 -->
+            <div class="col-md-6">
+
+                <div class="row align-items-center h-100">
+                    <div class="col music-player-col">
+                      <div id="player2" data-plyr-provider="youtube" data-plyr-embed-id="KsUfxOvW4SI"></div>
+                        <br/>
+                        <br/>
+                        <div class="g-ytsubscribe" data-channelid="UCTBPKPdlmmh801HUD3RU3rA" data-layout="full" data-theme="dark" data-count="default"></div>
+                        <!-- <a href="https://twitter.com/melissastmoore?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="true" data-size="large">Follow @melissastmoore</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                        
+
+                        -->
+                        <br/>
+                        <br/>
+                            <form action="https://www.paypal.com/donate" method="post" target="_top">
+                                <input type="hidden" name="hosted_button_id" value="F3CS2KAF2B3DL" />
+                                <input type="image" src="https://i.imgur.com/uyF3zgm.png" border="0" name="submit" title="Help support future music and tv show ventures by Donating!" alt="Donate with PayPal button" />
+                                <img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
+                            </form>
+                    </div>
+                </div>
+
+            </div>
+            <!-- /.col-md-6 -->
+
         </div>
-        </div>
-        <div class="col-lg-2"></div>
-      </div>
-
-  </div> <!-- /end #content-->
+        <!-- /.row -->
+    </div>
+  </div>
 
 <footer>
 
@@ -120,11 +150,12 @@
   });
   
   // Change "{}" to your options:
-// https://github.com/sampotts/plyr/#options
-const player = new Plyr('#player', {});
-
-// Expose player so it can be used from the console
-window.player = player;
+  // https://github.com/sampotts/plyr/#options
+  const player = new Plyr('#player', {});
+  const player2 = new Plyr('#player2', {});
+  // Expose player so it can be used from the console
+  window.player = player;
+  window.player = player2;
   
   </script>
 

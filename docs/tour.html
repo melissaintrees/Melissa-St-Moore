@@ -23,7 +23,7 @@
     <link rel="icon" type="image/png" href="images/favicon-32x32.png" sizes="32x32" />
     <link rel="icon" type="image/png" href="images/favicon-16x16.png" sizes="16x16" />
 
-
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.6.2/plyr.css" />
     <link href="css/slicknav.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
         integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
@@ -64,22 +64,21 @@
         </div>
         <nav class="menu-bor">
             <ul id="menu">
-                ]
                 <li><a href="index.html">music</a></li>
                 <li><a href="info.html">info</a></li>
                 <li><a href="videos.html">video</a></li>
-                <li class="highlight"><a href="tour.html">live</a></li>
+                <li class="highlight"><a href="tour.html">show</a></li>
                 <div class="text-right social-grp">
                     <a class="social" href="https://mailchi.mp/bacbde16cf94/mailinglist">
                         <i class="far fa-newspaper fa-2x"></i>
                     </a>
-                    <a class="social" href="https://www.facebook.com/melissastmoore">
-                        <i class="fab fa-facebook-f fa-2x"></i>
+                    <a class="social" href="https://www.instagram.com/melissastmoore">
+                        <i class="fab fa-instagram fa-2x"></i>
                     </a>
                     <a class="social" href="http://www.youtube.com/melissastmoore">
                         <i class="fab fa-youtube fa-2x"></i>
                     </a>
-                    <a class="social" href="http://smarturl.it/stmooredebutspotify">
+                    <a class="social" href="https://artists.spotify.com/c/artist/4RUivryHDsx8Q9s6kcs3YP/profile/overview">
                         <i class="fab fa-spotify fa-2x"></i>
                     </a>
                 </div>
@@ -88,22 +87,66 @@
     </header>
 
     <div id="mobile-nav"></div>
-
-    <!-- particles.js container -->
-    <div class="row custom-margins">
-
-        <div class="offset-2 col-8">
-
-            <script charset="utf-8" src="https://widget.bandsintown.com/main.min.js"></script><a
-                class="bit-widget-initializer" data-artist-name="Melissa St Moore" data-display-local-dates="false"
-                data-display-past-dates="false" data-auto-style="false" data-text-color="#000000"
-                data-link-color="#ed4212" data-background-color="rgba(0,0,0,0)" data-display-limit="15"
-                data-link-text-color="#505151" data-display-lineup="false" data-display-play-my-city="true"
-                data-separator-color="rgba(124,124,124,0.25)"></a>
-
+    <div id="content" class="content content2">
+        <div class="container">
+    
+            <div class="row">
+           
+                <div class="col-md-6">
+                    <div class="row align-items-center h-100">
+                        <div class="col">
+                            <h1 class="pages-heading">baf show</h1><br>
+                            <div id="player3" data-plyr-provider="youtube" data-plyr-embed-id="ImckhwmySsk"></div>
+    
+                        </div>
+                    </div>
+                </div>
+                <!-- /.col-md-6 -->
+                <div class="col-md-6">
+    
+                    <div class="row align-items-center h-100">
+                        <div class="col music-player-col">
+                          <div id="player4" data-plyr-provider="youtube" data-plyr-embed-id="e4Q431QfkTc"></div>
+                            <br/>
+                            <br/>
+                            <div class="g-ytsubscribe" data-channelid="UCTBPKPdlmmh801HUD3RU3rA" data-layout="full" data-theme="dark" data-count="default"></div>
+                            <!-- <a href="https://twitter.com/melissastmoore?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="true" data-size="large">Follow @melissastmoore</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                            
+    
+                            -->
+                            <br/>
+                            <br/>
+                                <form action="https://www.paypal.com/donate" method="post" target="_top">
+                                    <input type="hidden" name="hosted_button_id" value="F3CS2KAF2B3DL" />
+                                    <input type="image" src="https://i.imgur.com/uyF3zgm.png" border="0" name="submit" title="Help support future music and tv show ventures by Donating!" alt="Donate with PayPal button" />
+                                    <img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
+                                </form>
+                        </div>
+                    </div>
+    
+                </div>
+                <!-- /.col-md-6 -->
+    
+            </div>
+            <!-- /.row -->
         </div>
+      </div>
+    <!-- <div id="content">
 
-    </div>
+        <div class="row">
+          
+          <div class="col-lg-2"></div>
+          <div class="col-lg-8 center-screen">
+            <h1 class="pages-heading">live</h1><br>
+            <div class="container">
+              <div id="player" data-plyr-provider="youtube" data-plyr-embed-id="wp_Mp_13EIs"></div>
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLcd_6XBjr83efNqUpgp9vEr1zgwLLhBpj" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            
+          </div>
+        </div>    
+    </div>  -->
+    <!-- particles.js container -->
 
     <footer>
 
@@ -113,9 +156,9 @@
         </p>
 
     </footer>
-    <script charset="utf-8" src="https://widget.bandsintown.com/main.min.js"></script>
-    <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-
+    <!-- <script charset="utf-8" src="https://widget.bandsintown.com/main.min.js"></script>
+    <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> -->
+    <script src="https://cdn.plyr.io/3.6.2/plyr.polyfilled.js"></script>
 
     <!-- Javascript for slicknav menu -->
     <script type="text/javascript">
@@ -124,6 +167,11 @@
             duration: 500,
             prependTo: '#mobile-nav',
         });
+        const player3 = new Plyr('#player3', {});
+        const player4 = new Plyr('#player4', {});
+    // Expose player so it can be used from the console
+    window.player = player3;
+    window.player = player4;
     </script>
 
 </body>

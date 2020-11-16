@@ -89,7 +89,7 @@ nav li a:focus {
 .fa-newspaper,
 .fa-spotify,
 .fa-twitter,
-.fa-facebook-f,
+.fa-instagram,
 .fa-youtube {
   color:white;
   padding: 0em .6em;
@@ -98,7 +98,7 @@ nav li a:focus {
 .fa-newspaper:hover,
 .fa-spotify:hover,
 .fa-twitter:hover,
-.fa-facebook-f:hover,
+.fa-instagram:hover,
 .fa-youtube:hover {
   color:#ed4213;
   text-decoration: none;
@@ -172,7 +172,7 @@ a.hover-text-lg::before {
 
 .pages-heading {
   font-family: "Open Sans", sans-serif !important;
-  font-size: 4em !important;
+  font-size: 3em;
   color: orangered;
   }
 
@@ -589,7 +589,11 @@ footer a:hover {
 }
 
 @media screen and (max-width:991px) {
-  .fa-newspaper, .fa-spotify, .fa-twitter, .fa-facebook-f, .fa-youtube {
+  .pages-heading {
+    font-size: 3em;
+  }
+
+  .fa-newspaper, .fa-spotify, .fa-twitter, .fa-instagram, .fa-youtube {
     font-size: 20px;
   }
     a.hover-text::before {
@@ -671,7 +675,7 @@ header {
 .fa-newspaper,
 .fa-spotify,
 .fa-twitter,
-.fa-facebook-f,
+.fa-instagram,
 .fa-youtube {
   padding: 0em 0em;
 }
@@ -775,9 +779,12 @@ a.hover-text-spin::before {
 
 @media screen and (max-width:550px) {
   /*
+
   smartphones, Android phones, landscape iPhone
   */
-
+  .pages-heading {
+    font-size: 2em;
+  }
 #logo {
   /* float:left; */
   margin-left:.6em;
